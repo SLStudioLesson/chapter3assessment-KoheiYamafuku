@@ -3,8 +3,8 @@ package com.recipeapp.ui;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
+
+import com.recipeapp.datahandler.DataHandler;
 
 public class RecipeUI {
     private BufferedReader reader;
@@ -33,6 +33,7 @@ public class RecipeUI {
 
                 switch (choice) {
                     case "1":
+                    dataHandler.readData();
                         break;
                     case "2":
                         break;
