@@ -22,7 +22,6 @@ public class App {
                 System.out.println("Current mode:" + jsonHandler.getMode());
             } else {// 数字が2以外であれば
                 CSVDataHandler csvHandler = new CSVDataHandler();
-                System.out.println("Current mode:" + csvHandler.getMode());
                 // メインメニューを表示
                 RecipeUI ui = new RecipeUI(csvHandler);
                 ui.displayMenu();
